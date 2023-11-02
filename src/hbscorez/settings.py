@@ -115,7 +115,7 @@ LOGGING: dict = {
     'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
-            'format': '{levelname:8} {asctime} {module} - {message}',
+            'format': '{asctime} {levelname:8} [{module}.py:{lineno}]: {message}',
             'style': '{',
         },
         'simple': {
